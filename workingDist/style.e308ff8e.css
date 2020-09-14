@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    height: 100%;
+  }
+  body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+            flex-direction:column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    font-family: arial;
+  }
+  strong {
+    display: block;
+    color: black;
+    margin-bottom: 0.5em;
+  }
+  #logo {
+      margin:1em 0 .5em;
+      font-size:2.5em;
+      text-transform:uppercase;
+  }
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .result {
+    margin: 0.5em;
+    font-size: 4em;
+    text-align: center;
+  }
+  .title {
+      font-size:2em;
+      margin-bottom:.5em;
+  }
+  .container {
+    background: white;
+    /* box-shadow: 0 0 4px 2px rgba(45, 45, 45, 0.1); */
+    width:100%;
+    max-width: 600px;
+    padding: 2em;
+    border-radius: 2px;
+    margin-top:1em;
+    background:#f7f7f7;
+    border:1px solid #ccc;
+    margin-bottom:1em;
+  }
+  
+  #step-two p {
+    margin-bottom: 2em;
+  }
+  #step-one {
+    max-width: 800px;
+  }
+  .input-area {
+      display:-webkit-box;
+      display:flex;
+      margin-bottom:20px;
+  }
+  .input {
+    padding:10px;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    border:1px solid #ddd;
+    color:#333;
+    -webkit-box-flex:1;
+            flex:1;
+  }
+  .input:hover,
+  .input:focus {
+      border:1px solid #ccc;
+  }
+  [placeholder] {
+    font-size:1.2em;
+  }
+  #add {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    margin-left:2px;
+  }
+  .row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    border-bottom:1px solid #eee;
+    /* width:50%; */
+    /* display:inline-block; */
+  }
+  .hide {
+    display: none;
+  }
+  #error {
+      background:#e4292927;
+      /* color:#e42929; */
+      padding:1em;
+      border-radius:2px;
+      margin-bottom:20px;
+      border:1px solid #e4292988;
+      text-align:center;
+      color:#a32828;
+  }
+  .danger,
+  .primary {
+    font-size:.8em;
+    text-transform:uppercase;
+  }
+  .danger {
+    background:#e42929;
+    color:white;
+  }
+  .primary {
+      background:rgb(36, 177, 36);
+      color:white;
+  }
+  .buttons {
+      padding:1em 0;
+  }
+
+  /* Step Two */
+
+  .names-span {
+    color:#a32828;
+    border-radius:2px;
+    display:block;
+    margin-bottom:1em;
+    background:#d627271e;
+    padding:1em;
+    border:1px solid #a32828;
+  }
+
+  #selection {
+    width:100%;
+    padding:.8em;
+    font-size:.8em;
+  }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

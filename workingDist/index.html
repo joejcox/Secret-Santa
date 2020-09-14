@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secret Santa Draw</title>
+    <link rel="stylesheet" href="./style.css"></head>
+
+<body>
+    <header>
+        <h1 id="logo">Secret Santa Draw</h1>
+    </header>
+    <div class="container" id="step-one">
+        <h2 class="title">Enter your team members below</h2>
+            <p id="error" class="hide">Please add at least three names to the list before continuing!</p>
+            <div class="input-area">
+                <input type="text" class="input" id="input" placeholder="Type a name and hit enter to add to the list">
+                <button id="add" class="primary">Add</button>
+            </div>
+            <div id="names-list">
+            </div>
+            <div class="buttons">
+                <button id="continue" class="primary">Next</button>
+                <button id="clear" class="danger hide">Clear All</button>
+            </div>
+    </div>
+    
+
+    <div class="container hide" id="step-two">
+        <p id="names-in-draw"></p>
+        <p>Please select your name below and click "roll".</p>
+        <p id="choice-error"></p>
+        <select id="selection">
+        </select>
+        <div class="buttons">
+        <button id="roll" class="primary">Roll</button>
+        <button id="go-back" class="danger">Go Back</button>
+        </div>
+    </div>
+
+    <div class="container hide" id="step-three">
+        <p>If the name below is your own, please re-roll, otherwise press write the name down on a piece of paper and
+            press confirm</p>
+        <h2 class="result">Joe</h2>
+        <div class="buttons">
+            <button id="confirm" class="primary">Confirm</button>
+        </div>
+    </div>
+
+    <div id="final" class="hide">
+        <h2 class="title">Sorting Complete!</h2>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

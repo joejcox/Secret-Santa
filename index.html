@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secret Santa Draw</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Secret Santa Draw</h1>
+    </header>
+    <div class="container" id="step-one">
+            <h2 class="the-title">Enter Your Team Members Below</h2>
+            <p id="error" class="hide">Please add at least three names to the list before continuing!</p>
+            <div class="input-area columns">
+                <div class="interact">
+                <input type="text" class="input" id="input" placeholder="Type a name and hit enter to add to the list" />
+                <button id="add" class="primary"><i class="fa fa-plus"></i></button>
+                </div>
+                <span id="num-of-people"><i class="fa fa-user"></i>0</span>
+            </div>
+            <div id="names-list" class="columns is-multiline">
+            </div>
+            <div class="buttons">
+                    <button id="clear" class="danger hide">Clear All</button>
+                <button id="continue" class="primary">Next</button>
+            </div>
+    </div>
+    </div>
+
+    <div class="container hide" id="step-two">
+        <p id="names-in-draw" class="hr"></p>
+        <p>Please select your name below and click "assign me a person" to find out who you are buying for.</p>
+        <p id="choice-error" class="hide"></p>
+        <select id="selection">
+        </select>
+        <div class="buttons">
+                <button id="go-back" class="danger">Go Back</button>
+        <button id="roll" class="primary">Assign</button>
+        </div>
+    </div>
+
+    <div class="container hide" id="step-three">
+        <p id="result-info"></p>
+        <h2 class="result"></h2>
+        <div class="buttons">
+            <button id="confirm" class="primary">Confirm</button>
+        </div>
+    </div>
+
+    <div id="final" class="hide">
+        <h2 class="title">Sorting Complete!</h2>
+        <a href="http://coejox.com/santa">Go Again!</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
